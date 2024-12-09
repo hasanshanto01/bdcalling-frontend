@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,4 +18,33 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* black: #1D242D */
+/* Foundation/Primary Black/Light :active:#BBBBBB */
+/* Foundation/Primary White/Normal :hover:#DFE1E3 */
+/* Gray Scale/Gray – 100:#E6E6E6 */
+/* Gray Scale/Gray – 200:#CCCCCC */
+/* Gray Scale/Gray – 400:#999999 */
+/* Gray Scale/Gray –50:#F2F2F2 */
+/* Gray Scale/Gray – 600:#666666 */
+/* Gray Scale/Gray – 900:#1A1A1A */
+/* Gray Scale/White:#FFFFFF */
+/* primary: #00B047 */
+/* Primary Black:#232323 */
+/* Primary White:#F8FAFC */
+/* secondary: #FF7D29 */
+/* White:#FDFDFD */
+
+:root {
+  --primary-white: #f8fafc;
+  --black-color: #1d242d;
+  --black-light: #bbbbbb;
+  --secondary-color: #ff7d29;
+}
+
+body {
+  background: var(--primary-white);
+  color: var(--black-color);
+  font-family: var(--font-figtree);
 }

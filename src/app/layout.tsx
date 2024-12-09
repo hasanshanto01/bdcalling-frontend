@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Figtree } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const figtree = Figtree({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-figtree",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${figtree.variable} border border-red-600 min-h-screen flex flex-col`}
       >
-        {children}
+        <Navbar />
+        <main className="border border-yellow-400 flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
