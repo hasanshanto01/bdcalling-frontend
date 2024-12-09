@@ -43,15 +43,15 @@ function Navbar() {
 
         <ul className="flex items-center gap-5">
           <li className="flex items-center gap-1 cursor-pointer">
-            <span>All Category</span>
+            <span className={styles.menuOpacity}>All Category</span>
             <MdKeyboardArrowDown className={styles.navArrowIcon} />
           </li>
-          <li>
+          <li className={styles.menuOpacity}>
             <Link href="/about" className="inline-block w-full">
               About Us
             </Link>
           </li>
-          <li>
+          <li className={styles.menuOpacity}>
             <Link href="/contact" className="inline-block w-full">
               Contact Us
             </Link>
