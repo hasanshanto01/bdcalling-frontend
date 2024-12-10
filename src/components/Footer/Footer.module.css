@@ -1,0 +1,41 @@
+.footerContainer {
+  background: var(--primary-black);
+  color: var(--primary-white);
+  font-size: 14px;
+}
+
+.desc {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.emailField {
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid rgba(248, 250, 252, 0.5);
+  border-radius: 50px 50px 50px 50px;
+  background: inherit;
+  color: var(--primary-white);
+  opacity: 0.5;
+}
+
+.emailField:focus {
+  border: 1px solid rgba(248, 250, 252, 1);
+}
+
+.submitBtn {
+  background: var(--primary-white);
+  color: var(--primary-black);
+  padding: 6px 16px;
+  border-radius: 50px 50px 50px 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.linkSectionHeader {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
