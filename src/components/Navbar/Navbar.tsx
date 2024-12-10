@@ -10,11 +10,12 @@ import {
   RiUserLine,
   IoIosSearch,
   MdKeyboardArrowDown,
+  CgMenuRight,
 } from "../../utils/Icon";
 
 function Navbar() {
   return (
-    <nav className="px-28 py-2 flex justify-between items-center gap-8">
+    <nav className="px-4 md:px-14 lg:px-28 py-2 flex justify-between items-center gap-8">
       {/* logo */}
       <div>
         <Link href="/">
@@ -24,7 +25,7 @@ function Navbar() {
       {/* logo */}
 
       {/* search bar & menus */}
-      <div className="flex items-center gap-5">
+      <div className="hidden lg:flex items-center gap-5">
         <form className="flex">
           <div className={styles.searchBox}>
             <div className={styles.searchIcon}>
@@ -61,12 +62,18 @@ function Navbar() {
       {/* search bar & menus */}
 
       {/* nav operations */}
-      <div className="flex items-center gap-5">
+      <div className="hidden lg:flex items-center gap-5">
         <FaRegHeart className={styles.navOperationIcon} />
         <FiShoppingCart className={styles.navOperationIcon} />
         <RiUserLine className={styles.navOperationIcon} />
       </div>
       {/* nav operations */}
+
+      {/* small screen menu */}
+      <div className="block lg:hidden">
+        <CgMenuRight className={styles.navOperationIcon} />
+      </div>
+      {/* small screen menu */}
     </nav>
   );
 }

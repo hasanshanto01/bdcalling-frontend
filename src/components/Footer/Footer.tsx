@@ -11,9 +11,9 @@ import appStore from "../../../public/app_store.svg";
 function Footer() {
   return (
     <footer
-      className={`px-28 py-6 flex flex-wrap justify-between gap-8 ${styles.footerContainer}`}
+      className={`px-4 md:px-14 lg:px-28 py-6 flex flex-wrap justify-between gap-1 lg:gap-8 ${styles.footerContainer}`}
     >
-      <div className="w-1/4">
+      <div className="w-full lg:w-1/4 mb-5 lg:mb-0">
         <div>
           <Link href="/">
             <Image src={logo} alt="Brand Logo" width={140} priority />
@@ -64,7 +64,7 @@ function Footer() {
         </ul>
       </div>
 
-      <div className="w-fit">
+      <div className="w-fit mt-5 md:mt-0">
         <h4 className={styles.linkSectionHeader}>Download App</h4>
         <div className="flex items-center gap-2">
           <Image src={qrCode} alt="QR Code" width={80} priority />
